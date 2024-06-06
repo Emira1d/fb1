@@ -6,7 +6,14 @@ import AppMenuItem from './AppMenuItem.vue';
 const model = ref([
     {
         label: 'Home',
-        items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' }]
+        items: [
+            { label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' },
+            { label: 'Поручения', icon: 'pi pi-fw pi-home', to: '/Order' },
+            { label: 'Позиции по ЦБ', icon: 'pi pi-fw pi-home', to: '/PosSecurities' },
+            { label: 'Позиции по ДС', icon: 'pi pi-fw pi-home', to: '/PosCash' },
+            { label: 'Выписка ЦБ', icon: 'pi pi-fw pi-home', to: '/ExtractSecurities' },
+            { label: 'Позиции по ДС', icon: 'pi pi-fw pi-home', to: '/ExtractCash' }
+        ]
     },
 
     // {
@@ -143,7 +150,7 @@ const model = ref([
     //         }
     //     ]
     // },
-    
+
     // {
     //     label: 'Get Started',
     //     items: [

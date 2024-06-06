@@ -12,7 +12,36 @@ const router = createRouter({
                     path: '/',
                     name: 'dashboard',
                     component: () => import('@/views/Dashboard.vue')
+                },    
+                {
+                    path: '/Order',
+                    name: 'Order',
+                    component: () => import('@/views/Order.vue')
                 },
+                {
+                    path: '/PosSecurities',
+                    name: 'PosSecurities',
+                    component: () => import('@/views/PosSecurities.vue')
+                },
+                {
+                    path: '/PosCash',
+                    name: 'PosCash',
+                    component: () => import('@/views/PosCash.vue')
+                },
+                {
+                    path: '/ExtractSecurities',
+                    name: 'ExtractSecurities',
+                    component: () => import('@/views/ExtractSecurities.vue')
+                },
+                {
+                    path: '/ExtractCash',
+                    name: 'ExtractCash',
+                    component: () => import('@/views/ExtractCash.vue')
+                },
+
+
+
+
                 {
                     path: '/uikit/formlayout',
                     name: 'formlayout',
@@ -135,11 +164,6 @@ const router = createRouter({
                     path: '/pages/crud',
                     name: 'crud',
                     component: () => import('@/views/pages/Crud.vue')
-                },
-                {
-                    path: '/documentation',
-                    name: 'documentation',
-                    component: () => import('@/views/utilities/Documentation.vue')
                 }
             ]
         },
@@ -158,16 +182,6 @@ const router = createRouter({
             path: '/auth/login',
             name: 'login',
             component: () => import('@/views/pages/auth/Login.vue')
-        },
-        {
-            path: '/auth/access',
-            name: 'accessDenied',
-            component: () => import('@/views/pages/auth/Access.vue')
-        },
-        {
-            path: '/auth/error',
-            name: 'error',
-            component: () => import('@/views/pages/auth/Error.vue')
         }
     ]
 });
