@@ -24,9 +24,13 @@ const logoUrl = computed(() => {
 const onTopBarMenuButton = () => {
     topbarMenuActive.value = !topbarMenuActive.value;
 };
-const onSettingsClick = () => {
+const onMassangeClick = () => {
     topbarMenuActive.value = false;
-    router.push('/documentation');
+    router.push('/Massange');
+};
+const onProfileClick = () => {
+    topbarMenuActive.value = false;
+    router.push('/Profile');
 };
 const topbarMenuClasses = computed(() => {
     return {
@@ -72,17 +76,13 @@ const isOutsideClicked = (event) => {
         </button>
 
         <div class="layout-topbar-menu" :class="topbarMenuClasses">
-            <button @click="onTopBarMenuButton()" class="p-link layout-topbar-button">
-                <i class="pi pi-calendar"></i>
-                <span>Calendar</span>
-            </button>
-            <button @click="onTopBarMenuButton()" class="p-link layout-topbar-button">
+            <button @click="onProfileClick()" class="p-link layout-topbar-button">
                 <i class="pi pi-user"></i>
                 <span>Profile</span>
             </button>
-            <button @click="onSettingsClick()" class="p-link layout-topbar-button">
+            <button @click="onMassangeClick()" class="p-link layout-topbar-button">
                 <i class="pi pi-cog"></i>
-                <span>Settings</span>
+                <span>Massange</span>
             </button>
         </div>
     </div>

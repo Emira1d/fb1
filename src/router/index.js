@@ -10,34 +10,42 @@ const router = createRouter({
             children: [
                 {
                     path: '/',
-                    name: 'dashboard',
-                    component: () => import('@/views/Dashboard.vue')
-                },    
-                {
-                    path: '/Order',
                     name: 'Order',
-                    component: () => import('@/views/Order.vue')
+                    component: () => import('@/views/Order/Order.vue')
                 },
                 {
                     path: '/PosSecurities',
                     name: 'PosSecurities',
-                    component: () => import('@/views/PosSecurities.vue')
+                    component: () => import('@/views/Positions/PosSecurities.vue')
                 },
                 {
                     path: '/PosCash',
                     name: 'PosCash',
-                    component: () => import('@/views/PosCash.vue')
+                    component: () => import('@/views/Positions/PosCash.vue')
                 },
                 {
                     path: '/ExtractSecurities',
                     name: 'ExtractSecurities',
-                    component: () => import('@/views/ExtractSecurities.vue')
+                    component: () => import('@/views/Extract/ExtractSecurities.vue')
                 },
                 {
                     path: '/ExtractCash',
                     name: 'ExtractCash',
-                    component: () => import('@/views/ExtractCash.vue')
+                    component: () => import('@/views/Extract/ExtractCash.vue')
                 },
+
+
+
+                {
+                    path: '/:pathMatch(.*)*',
+                    name: 'Notfound',
+                    component: () => import('@/views/pages/NotFound.vue')
+                },
+                
+
+
+
+
 
 
 
@@ -172,11 +180,7 @@ const router = createRouter({
             name: 'landing',
             component: () => import('@/views/pages/Landing.vue')
         },
-        {
-            path: '/pages/notfound',
-            name: 'notfound',
-            component: () => import('@/views/pages/NotFound.vue')
-        },
+
 
         {
             path: '/auth/login',
