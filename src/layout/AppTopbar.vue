@@ -24,10 +24,19 @@ const logoUrl = computed(() => {
 const onTopBarMenuButton = () => {
     topbarMenuActive.value = !topbarMenuActive.value;
 };
-const onMassangeClick = () => {
-    topbarMenuActive.value = false;
-    router.push('/Massange');
-};
+
+
+
+
+// const onMassangeClick = () => {
+//     topbarMenuActive.value = false;
+//     router.push('/Massange');
+// };
+
+
+
+
+
 const onProfileClick = () => {
     topbarMenuActive.value = false;
     router.push('/Profile');
@@ -80,10 +89,18 @@ const isOutsideClicked = (event) => {
                 <i class="pi pi-user"></i>
                 <span>Profile</span>
             </button>
-            <button @click="onMassangeClick()" class="p-link layout-topbar-button">
-                <i class="pi pi-cog"></i>
+
+
+
+
+            <!-- <button @click="onMassangeClick()" class="p-link layout-topbar-button">
+                <i class="pi pi-bell"></i>
                 <span>Massange</span>
-            </button>
+            </button> -->
+
+
+
+
         </div>
     </div>
 </template>
