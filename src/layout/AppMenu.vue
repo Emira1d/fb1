@@ -14,7 +14,8 @@ const model = ref([
             { label: 'Позиции по ЦБ', icon: 'pi pi-fw pi-home', to: '/PosSecurities' },
             { label: 'Позиции по ДС', icon: 'pi pi-fw pi-home', to: '/PosCash' },
             { label: 'Выписка ЦБ', icon: 'pi pi-fw pi-home', to: '/ExtractSecurities' },
-            { label: 'Выписка по ДС', icon: 'pi pi-fw pi-home', to: '/ExtractCash' }
+            { label: 'Выписка по ДС', icon: 'pi pi-fw pi-home', to: '/ExtractCash' },
+            { label: 'Отчет', icon: 'pi pi-fw pi-home', to: '/Report' }
         ]
     },
     {
@@ -33,7 +34,7 @@ const model = ref([
                     }
                 ]
             },
-            { label: 'Admin', icon: 'pi pi-fw pi-home', to: '/Admin', }
+            { label: 'Admin', icon: 'pi pi-desktop', to: '/Admin', }
             
             
         ]
