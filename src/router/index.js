@@ -168,8 +168,39 @@ const router = createRouter({
             path: '/auth/error',
             name: 'error',
             component: () => import('@/views/pages/auth/Error.vue')
+        },
+        {
+            path: '/auth/signin',
+            name: 'signin',
+            component: () => import('@/views/pages/auth/Signin.vue')
+        },
+        {
+            path: '/auth/autho',
+            name: 'autho',
+            component: () => import('@/views/pages/auth/Auth.vue')
+        },
+        {
+            path: '/auth/newreg',
+            name: 'newreg',
+            component: () => import('@/views/pages/auth/NewReg.vue')
         }
+
     ]
 });
 
+// router.beforeEach((to, from, next) => {
+//     const publicPages = ['/auth/Signin'];
+//     const authRequired = !publicPages.includes(to.path);
+//     const loggedIn = localStorage.getItem('user');
+  
+//     // trying to access a restricted page + not logged in
+//     // redirect to login page
+//     if (authRequired && !loggedIn) {
+//       next('/authSignin');
+//     } else {
+//       next();
+//     }
+//   });
+
 export default router;
+
