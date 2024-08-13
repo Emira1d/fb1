@@ -1,5 +1,4 @@
 <script setup>
-import PasswordField from './uikit/PasswordField.vue';
 </script>
 <template>
     <div class="grid">
@@ -38,17 +37,14 @@ import PasswordField from './uikit/PasswordField.vue';
             </div>
             <div class="card">
                 <div class="col-12 mb-2 lg:col-12 lg:mb-0">
-                    <PasswordField label="Current password" placeholder="Current password" />
+                    <InputText type="text" placeholder="Current password" />
                 </div>
                 <div class="col-12 mb-2 lg:col-12 lg:mb-0">
-                    <PasswordField label="New password" placeholder="New password" />
+                    <InputText type="text" placeholder="New password" />
                 </div>
                 <div class="col-12 mb-2 lg:col-12 lg:mb-0">
-                    <PasswordField label="Confirm new password" placeholder="Confirm new password" />
+                    <InputText type="text" placeholder="Confirm new password" />
                 </div>
-            </div>
-            <div class="card">
-                <h3>O Компании</h3>
             </div>
         </div>
     </div>
